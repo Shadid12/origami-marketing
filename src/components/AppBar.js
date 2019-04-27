@@ -6,6 +6,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
+// components
+import Hamburger from '../components/Hamburger'
+
+//sass 
+
 // assets
 import backImage from './back.svg';
 import logo from './logo.png';
@@ -22,11 +27,11 @@ class AppBarContainer extends Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
-    
+
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
-    
+
     handleScroll = (event) => {
         const winScroll =
             document.body.scrollTop || document.documentElement.scrollTop
@@ -43,35 +48,36 @@ class AppBarContainer extends Component {
 
     render() {
         const { classes } = this.props;
-        return(
+        return (
             <div className={classes.root}>
+                <Hamburger />
                 <AppBar
-                    className={this.state.scrolled >= 1 ? 
-                            `${classes.appbar} ${classes.appbar2}`: `${classes.appbar}` }
+                    className={this.state.scrolled >= 1 ?
+                        `${classes.appbar} ${classes.appbar2}` : `${classes.appbar}`}
                     position="fixed"
                 >
                     <Toolbar>
-                        <Typography 
-                            variant="h6" 
+                        <Typography
+                            variant="h6"
                             color="inherit"
                             className={classes.logo}
                         >
-                        Origami
+                            Origami
                         </Typography>
                     </Toolbar>
                 </AppBar>
                 <div className={classes.hero}>
                     <div className={classes.container}>
-                        <Typography variant="h3" color="inherit"className={classes.title}>
+                        <Typography variant="h3" color="inherit" className={classes.title}>
                             Origami Solutions
                         </Typography>
-                        <Typography variant="subtitle1" 
-                            color="inherit"className={classes.p}>
-                            We take pride in creating user friendly, accesible and responsive analytical 
+                        <Typography variant="subtitle1"
+                            color="inherit" className={classes.p}>
+                            We take pride in creating user friendly, accesible and responsive analytical
                             tools for healthcare industries.
                         </Typography>
-                        <Button 
-                            variant="contained" 
+                        <Button
+                            variant="contained"
                             color="primary" className={classes.button}
                         >
                             Try Now
@@ -85,7 +91,7 @@ class AppBarContainer extends Component {
 
 const styles = {
     root: {
-      flexGrow: 1,
+        flexGrow: 1,
     },
     logo: {
         background: `url(${logo}) no-repeat`
@@ -94,10 +100,10 @@ const styles = {
         marginTop: '10px',
         height: '100vh',
         background: `url(${backImage}) no-repeat`,
-        ['@media (min-width:1200px)']: { 
+        ['@media (min-width:1200px)']: {
             backgroundPosition: '100px 0px'
         },
-        ['@media (min-width:1400px)']: { 
+        ['@media (min-width:1400px)']: {
             backgroundPosition: '400px 0px'
         }
     },
@@ -111,8 +117,8 @@ const styles = {
     appbar2: {
         backgroundColor: '#194866',
         color: '#fff',
-        boxShadow: 
-        `0px 2px 4px -1px rgba(0,0,0,0.2), 
+        boxShadow:
+            `0px 2px 4px -1px rgba(0,0,0,0.2), 
         0px 4px 5px 0px rgba(0,0,0,0.14), 
         0px 1px 10px 0px rgba(0,0,0,0.12)`
 
@@ -123,13 +129,15 @@ const styles = {
         flexDirection: 'column',
         width: '400px',
         alignItems: 'center',
-        ['@media (min-width:768px)']: { 
+        ['@media (min-width:768px)']: {
             padding: `100px 0px 0px 0px`,
         },
     },
     title: {
         paddingLeft: '25px',
         paddingRight: '25px',
+        textTransform: 'uppercase',
+        fontWeight: '100',
     },
     p: {
         marginTop: '10px',
@@ -143,4 +151,4 @@ const styles = {
     }
 };
 
-export default withStyles(styles) (AppBarContainer);
+export default withStyles(styles)(AppBarContainer);
