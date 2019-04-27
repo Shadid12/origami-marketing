@@ -123,9 +123,6 @@ const styles = {
         flexDirection: 'column',
         width: '400px',
         alignItems: 'center',
-        ['@media (min-width:475px)']: { 
-            padding: `0px 0px 0px 0px`,
-        },
         ['@media (min-width:768px)']: { 
             padding: `100px 0px 0px 0px`,
         },
@@ -141,7 +138,8 @@ const styles = {
     },
     button: {
         marginTop: '10px',
-        textTransform: 'none'
+        textTransform: 'none',
+        background: `linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)`
     }
 };
 
