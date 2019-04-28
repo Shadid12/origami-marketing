@@ -1,10 +1,10 @@
 import React from 'react';
-import AppBar from './components/AppBar';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <AppBar />
+      <LandingPage />
     </div>
   );
 }

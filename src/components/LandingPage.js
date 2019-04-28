@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 // components
-import Hamburger from '../components/Hamburger'
+import Hamburger from './Hamburger'
 
 //sass 
 
@@ -50,7 +50,6 @@ class AppBarContainer extends Component {
         const { classes } = this.props;
         return (
             <div className={classes.root}>
-                <Hamburger />
                 <AppBar
                     className={this.state.scrolled >= 1 ?
                         `${classes.appbar} ${classes.appbar2}` : `${classes.appbar}`}
@@ -84,6 +83,7 @@ class AppBarContainer extends Component {
                         </Button>
                     </div>
                 </div>
+                <Hamburger />
             </div>
         )
     }
