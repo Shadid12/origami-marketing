@@ -24,7 +24,8 @@ class Hamburger extends Component {
             <div className="flex-navbar-hamburger-container">
                 <div className="navigation" >
                     <input type="checkbox" className="navigation_checkbox" id="nav_toggle"></input>
-                    <label htmlFor="nav_toggle" className="navigation_button" ></label>
+                    <label htmlFor="nav_toggle" className="navigation_button" >
+                    </label>
                     <div className="navigation_background" >{'\u00A0'}</div>
 
                     <nav className="navigation_nav">
