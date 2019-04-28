@@ -102,9 +102,6 @@ const styles = {
         background: `url(${backImage}) no-repeat`,
         ['@media (min-width:1200px)']: {
             backgroundPosition: '100px 0px'
-        },
-        ['@media (min-width:1400px)']: {
-            backgroundPosition: '400px 0px'
         }
     },
     appbar: {

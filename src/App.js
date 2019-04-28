@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <Hamburger />
       <LandingPage />
-      <SecondPage />
-      <ThirdPage />
+      {/* <SecondPage />
+      <ThirdPage /> */}
     </div>
   );
 }

@@ -2,9 +2,15 @@
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+.navigation_list {
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+}
+
 
 @media (min-width: 1281px) {
-  .navigation_list{
+  .navigation_list {
     left:10vw;
     bottom: 16vh
   }
@@ -30,8 +36,8 @@
     .background-img {
         width: 40%;
     }
-    .navigation_list{
-      left:21vw;
+    .navigation_list {
+      left:10vw;
       bottom: 20vh
     }
 }
@@ -80,7 +86,7 @@
     .header-main {
         font-size: 75px;
     }
-    .navigation_list{
+    .navigation_list {
       left: 40vw;
     }
 }
