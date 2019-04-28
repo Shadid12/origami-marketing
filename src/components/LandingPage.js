@@ -51,7 +51,7 @@ class AppBarContainer extends Component {
         return (
             <div className={classes.root}>
                 <AppBar
-                    className={this.state.scrolled >= 1 ?
+                    className={this.state.scrolled >= .01 ?
                         `${classes.appbar} ${classes.appbar2}` : `${classes.appbar}`}
                     position="fixed"
                 >
