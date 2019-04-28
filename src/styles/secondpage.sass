@@ -2,6 +2,60 @@
 $backgroundColor: rgb(229,243,254)
 
 
-.body-wrapper
-    background: $backgroundColor
-    height: 95vh
+
+.second-page
+    height: 100vh
+.background-img-wrapper 
+    display: flex
+    align-items: center
+    justify-content: center
+
+.background-img 
+    width: 30%
+    transition: all .5s ease-out
+    perspective: 240rem
+    transform: rotateX(10deg)
+    cursor: pointer
+    @media (min-width: 768px) and (max-width: 1024px) 
+        .background-img 
+            width: 40%
+    
+
+.background-img:hover 
+    transform: rotateX(-10deg)
+
+
+/* SASS MIXINGS */
+
+.header-main 
+    background-color: $backgroundColor
+    font-family: 'PT Sans', sans-serif
+    letter-spacing: 17px
+    text-align: center
+    font-size: 75px
+    color: rgba(95, 93, 93, 0.766)
+    padding: 20px 0px 10px 0px
+    margin: 0px 0px 0px 0px
+    text-shadow: 2px 4px 5px rgba(108,103,130,0.61)
+    transition: all .5s ease-out
+    perspective: 240rem
+    transform: rotateX(20deg)
+    cursor: pointer
+    font-weight: 100
+    z-index: 0
+
+
+.header-main:hover
+    text-shadow: 10px 10px 6px rgba(150, 150, 150, .7)
+    transform: rotateX(0deg)
+
+
+    
+
+.MuiFab-root-33
+    left: 70vw
+    bottom: 32vh
+
+.MuiFab-root-34
+    left: 22vw
+    bottom: 32vh

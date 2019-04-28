@@ -83,11 +83,11 @@ class AppBarContainer extends Component {
                         </Button>
                     </div>
                 </div>
-                <Hamburger />
             </div>
         )
     }
 }
+
 
 const styles = {
     root: {
