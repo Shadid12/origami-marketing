@@ -16,7 +16,9 @@ class Hamburger extends Component {
         const hamburgerData =
             [
                 { title: 'Our Goal', href: '#goal' },
+                { title: 'About Us', href: '#about' },
                 { title: 'About Us', href: '#about' }
+
             ]
         return (
             <div className="flex-navbar-hamburger-container">
