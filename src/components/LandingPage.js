@@ -49,7 +49,7 @@ class AppBarContainer extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div className={classes.root}>
+            <div className={classes.root} id="home">
                 <AppBar
                     className={this.state.scrolled >= .01 ?
                         `${classes.appbar} ${classes.appbar2}` : `${classes.appbar}`}

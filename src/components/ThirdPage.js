@@ -13,9 +13,10 @@ class ThirdPage extends Component {
     render() {
 
         return (
-            <div className="third-page" id="about" >
+            <div className="third-page" id="team" >
                 <h1 className="header-main"> MEET THE TEAM </h1>
-                <div className="team-body" >
+                <h2>Coming Soon</h2>
+                {/* <div className="team-body" >
                     {
                         teamDetails.map((item, index) => {
                             return (
@@ -23,7 +24,7 @@ class ThirdPage extends Component {
                             )
                         })
                     }
-                </div>
+                </div> */}
             </div>
         )
     }
