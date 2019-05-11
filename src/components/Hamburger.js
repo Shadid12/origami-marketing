@@ -29,6 +29,7 @@ class Hamburger extends Component {
                 <div className="navigation">
                     <input type="checkbox" className="navigation_checkbox" id="nav_toggle"></input>
                     <label htmlFor="nav_toggle" className="navigation_button" >
+                        <span>Menu</span>
                     </label>
                     <div className="navigation_background" >{'\u00A0'}</div>
 
